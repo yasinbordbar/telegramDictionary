@@ -1,11 +1,12 @@
 require("dotenv").config();
+
 const { Telegraf } = require("telegraf");
 
 const bot = new Telegraf(process.env.BOT_TOKEN);
 
 var Owlbot = require("owlbot-js");
 
-var client = Owlbot(process.env.YOUR_TOKEN);
+var client = Owlbot(process.env.ACCESS_TOKEN);
 
 bot.on("text", async (ctx) => {
   try {
